@@ -1,0 +1,15 @@
+<div class="d-flex justify-content-center">
+    
+    
+    <img class="card-img-top"
+        *ngIf="hasLoaded; else loader"
+        [src]=url
+        [alt]=alt>
+
+    <ng-template #loader>
+        <img 
+            class="mt-3" height="35" width="35"
+            src="assets/loader.svg"
+            (load)="onLoad()">
+    </ng-template>
+</div>
