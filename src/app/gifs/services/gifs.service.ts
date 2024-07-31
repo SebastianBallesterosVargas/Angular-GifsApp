@@ -8,7 +8,7 @@ export class GifsService {
   public gifs: Gif[] = []
 
   private _tagsHistory: string[] = [];
-  private _gifApiKey: string = 'AW5tOwu57iLiEm4cfMDShDiJlErM2IFg';
+  private _gifApiKey: string = '';
 
   private _apiUrl: string = 'https://api.giphy.com/v1/gifs';
   private _apiService: string = '/search';
